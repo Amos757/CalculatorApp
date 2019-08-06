@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:orientation="vertical">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/tvResult" android:layout_weight="1"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:background="@android:color/darker_gray"
+            android:textColor="#FFFFFF"/>
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1">
+        <TableRow
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="0dip"
+                android:orientation="vertical">
+            <Button
+                    android:id="@+id/btnAC"
+                    android:onClick="btnOnClickOperation"
+                    android:text="AC"
+                    android:layout_span="3"
+                    android:layout_width="208dp"/>
+            <Button
+                    android:id="@+id/btnSlash"
+                    android:onClick="btnOnClickOperation"
+                    android:text="/"
+                    android:layout_weight="1"
+                    android:layout_span="2"
+                    android:layout_width="match_parent" android:layout_height="match_parent" android:textColor="#FFFFFF"
+                    android:background="@android:color/holo_orange_dark"/>
+        </TableRow>
+
+        <TableRow
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="0dip">
+            <Button
+                    android:id="@+id/button7"
+                    android:onClick="btnOnClickNum"
+                    android:text="7"
+            />
+            <Button
+                    android:id="@+id/button8"
+                    android:onClick="btnOnClickNum"
+                    android:text="8"
+            />
+            <Button
+                    android:id="@+id/button9"
+                    android:onClick="btnOnClickNum"
+                    android:text="9"
+            />
+            <Button
+                    android:id="@+id/buttonStar"
+                    android:onClick="btnOnClickOperation"
+                    android:text="*"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF" android:background="@android:color/holo_orange_dark"/>
+        </TableRow>
+
+        <TableRow
+                android:id="@+id/row3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="0dip">
+            <Button
+                    android:id="@+id/button4"
+                    android:onClick="btnOnClickNum"
+                    android:text="4"
+            />
+            <Button
+                    android:id="@+id/button5"
+                    android:onClick="btnOnClickNum"
+                    android:text="5"
+            />
+            <Button
+                    android:id="@+id/button6"
+                    android:onClick="btnOnClickNum"
+                    android:text="6"
+            />
+            <Button
+                    android:id="@+id/buttonMinus"
+                    android:onClick="btnOnClickOperation"
+                    android:text="-"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF" android:background="@android:color/holo_orange_dark"/>
+        </TableRow>
+
+        <TableRow
+                android:id="@+id/row4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="0dip">
+            <Button
+                    android:id="@+id/button1"
+                    android:onClick="btnOnClickNum"
+                    android:text="1"
+            />
+            <Button
+                    android:id="@+id/button2"
+                    android:onClick="btnOnClickNum"
+                    android:text="2"
+            />
+            <Button
+                    android:id="@+id/button3"
+                    android:onClick="btnOnClickNum"
+                    android:text="3"
+            />
+            <Button
+                    android:id="@+id/buttonPlus"
+                    android:onClick="btnOnClickOperation"
+                    android:text="+"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:background="@android:color/holo_orange_dark"/>
+        </TableRow>
+
+        <TableRow
+                android:id="@+id/row5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="0dip">
+            <Button
+                    android:id="@+id/button0"
+                    android:onClick="btnOnClickNum"
+                    android:text="0"
+                    android:layout_span="2"
+            />
+            <Button
+                    android:id="@+id/buttonDot"
+                    android:onClick="btnOnClickOperation"
+                    android:text="."
+            />
+            <Button
+                    android:id="@+id/buttonEquals"
+                    android:onClick="btnOnClickEqual"
+                    android:text="="
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:background="@android:color/holo_orange_dark"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
+
